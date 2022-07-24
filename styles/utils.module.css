@@ -65,3 +65,11 @@
 .lightText {
   color: #666;
 }
+
+.article {
+  padding: 20px;
+}
+
+.postContents {
+  margin-top: 35px;
+}
