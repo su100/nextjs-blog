@@ -28,15 +28,33 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <section className={utilStyles.introSection}>
+              <div>
+                <Image
+                  priority
+                  src="/images/profile.jpg"
+                  className={utilStyles.profileImage}
+                  height={130}
+                  width={130}
+                  alt={name}
+                />
+                <h1 className={utilStyles.heading2Xl}>{name}</h1>
+              </div>
+              <div>
+                <p className={utilStyles.introduction}>
+                  같이 성장을 추구하는 프론트엔드 개발자
+                </p>
+                <p>
+                  React, ES6+, Redux, react-query, zustand, styled-components
+                </p>
+                <p className={utilStyles.introduction}>
+                  <strong>GITHUB:</strong>{' '}
+                  <a href="https://github.com/su100">
+                    https://github.com/su100
+                  </a>
+                </p>
+              </div>
+            </section>
           </>
         ) : (
           <>
@@ -45,14 +63,14 @@ export default function Layout({ children, home }) {
                 <Image
                   priority
                   src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
+                  className={utilStyles.profileImage}
                   height={108}
                   width={108}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={utilStyles.heading2Xl}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
