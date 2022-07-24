@@ -3,7 +3,7 @@
   line-height: 1.2;
   font-weight: 800;
   letter-spacing: -0.05rem;
-  margin: 1rem 0;
+  margin: 0;
 }
 
 .headingXl {
@@ -25,8 +25,23 @@
   line-height: 1.5;
 }
 
-.borderCircle {
-  border-radius: 9999px;
+.profileImage {
+  border-radius: 20px;
+}
+
+.introduction {
+  margin: 5px 0;
+  font-size: 19px;
+  color: #1a1a1a;
+}
+
+.introSection {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .colorInherit {
@@ -49,4 +64,12 @@
 
 .lightText {
   color: #666;
+}
+
+.article {
+  padding: 20px;
+}
+
+.postContents {
+  margin-top: 35px;
 }
