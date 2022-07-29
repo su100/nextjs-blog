@@ -44,7 +44,9 @@ export default function Layout({ children, home }) {
                 <p className={utilStyles.introduction}>
                   같이 성장을 추구하는 프론트엔드 개발자
                 </p>
-                <p>
+                <p
+                  className={`${utilStyles.introduction} ${utilStyles.font500}`}
+                >
                   React, ES6+, Redux, react-query, zustand, styled-components
                 </p>
                 <p className={utilStyles.introduction}>
