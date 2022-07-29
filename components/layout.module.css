@@ -3,6 +3,7 @@
   padding: 1rem;
   margin: 3rem auto 6rem;
   background: #fff;
+  border-radius: 2px;
 }
 
 .header {
@@ -15,4 +16,11 @@
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 2rem auto;
+    width: 90vw;
+  }
 }
